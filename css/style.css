@@ -133,6 +133,7 @@
 
 .image-article {
     margin: 30px;
+
 }
 
 .title-article {
@@ -144,4 +145,15 @@
 .article {
     display: block;
     margin: 30px;
+
+}
+
+
+/* MEDIA QUERY PER ARTICLE MOBILE */
+@media screen and (max-width:575px) {
+    .container-article {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
 }
