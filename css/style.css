@@ -98,9 +98,6 @@
     margin-inline: 20px;
 }
 
-
-
-
 .button-shop {
     border: none;
     border-radius: 60px;
@@ -121,4 +118,30 @@
     height: 3em;
     width: 4em;
     margin-right: 30px;
+}
+
+/* FLEXIBLE ARTICLE */
+
+.container-article {
+    background-color: #FBF7E3;
+    height: 40%;
+    width: 90%;
+    border-radius: 40px;
+    display: flex;
+    margin: 30px;
+}
+
+.image-article {
+    margin: 30px;
+}
+
+.title-article {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: 30px;
+}
+
+.article {
+    display: block;
+    margin: 30px;
 }
