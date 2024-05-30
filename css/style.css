@@ -27,7 +27,6 @@
     width: 650px;
     background-color: #FBF7E3;
     display: block;
-
 }
 
 .text {
@@ -73,13 +72,17 @@
 /* NAVIGATION BAR */
 
 .container-navbar {
-    width: 100%;
-    height: 8rem;
-    background-color: #FBF7E3;
-    border-radius: 80px;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #FBF7E3;
+    border-radius: 80px;
 }
 
 .button {
@@ -145,15 +148,143 @@
 .article {
     display: block;
     margin: 30px;
-
 }
+
+/* LAYOUT COMPLETO */
+
+
+
 
 
 /* MEDIA QUERY PER ARTICLE MOBILE */
 @media screen and (max-width:575px) {
+
     .container-article {
         display: flex;
         flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .block {
+        display: block;
+    }
+
+    /* 
+    .text-container {
+        margin-left: 11rem;
+    } */
+
+    .titolo {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 50px;
+    }
+
+    .container-navbar {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        height: 15rem;
+        border-radius: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    .button {
+        border-radius: 40px;
+        width: 25%;
+        height: 40%;
+        font-size: 20px;
+        margin: 2%;
+    }
+
+    .button-shop {
+        border-radius: 80px;
+        width: 45%;
+        height: 80%;
+        padding: 35px;
+        font-size: 30px;
+        margin: 2%;
+    }
+
+    .logo {
+        height: 20%;
+        width: 40%;
+        margin-right: 5px;
+    }
+
+
+    .container-article {
+        width: 90%;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-4cards {
+        display: flex;
+    }
+
+    .container-product {
+        height: 50%;
+        width: 90%;
+        padding-block: 50px;
+    }
+
+    .container-info-product {
+        height: 60%;
+        width: 90%;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .img-honey {
+        height: 60%;
+        width: 90%;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+
+    .product-name {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+
+    .container-text {
+        padding-top: 1rem;
 
     }
+
+    .text-container {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .product-info {
+        font-size: 1.1rem;
+    }
+
+    .product-price {
+        font-weight: 500;
+        font-size: 1.2rem
+    }
+
+    .button-cart {
+        padding: 5px;
+        width: 9rem;
+        font-size: 20px;
+        border-radius: 40px;
+        border: none;
+        background-color: #F3DF85;
+        font-weight: 400;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+
 }
